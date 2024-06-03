@@ -72,6 +72,10 @@ export default {
 </template>
 
 <style scoped>
+.ourSolBox {
+	margin-bottom: 10rem;
+}
+
 hr {
 	width: 0.8rem;
 	padding: 0.2rem 0;
@@ -121,6 +125,11 @@ button {
 		rgba(88, 221, 125, 1) 60%,
 		rgba(0, 217, 166, 1) 100%
 	);
+}
+
+.my-card {
+	background: linear-gradient(white, white);
+	transition: all 2s;
 }
 
 .my-card:hover {
