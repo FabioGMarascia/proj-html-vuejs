@@ -1,6 +1,4 @@
 import { reactive } from "vue";
 
-const myData = reactive({
-	// tvSeriesTitle: "POPULAR TV SERIES",
-});
+const myData = reactive({});
 export default myData;

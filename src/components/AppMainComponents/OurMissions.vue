@@ -20,7 +20,7 @@ export default {
 		</div>
 
 		<div class="ourMissBoxRight col-4">
-			<div class="col-7 mb-3">
+			<div class="col-8 mb-3">
 				<p class="fw-bold py-4 display-4">learn more about our <span>missions</span></p>
 
 				<hr class="d-inline-block me-2 rounded bg-success opacity-100" />
@@ -71,6 +71,34 @@ button,
 		rgba(88, 221, 125, 1) 60%,
 		rgba(0, 217, 166, 1) 100%
 	);
+}
+
+button {
+	font-size: 0.6rem;
+	display: inline-block;
+	position: relative;
+	background-color: #d5c264;
+	transition: color 0.5s;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.background {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: linear-gradient(#000000, #000000);
+	transition: 0.5s;
+	z-index: -1;
+	border-radius: 50%;
+}
+
+button:hover .background {
+	width: 150%;
+	height: 400%;
 }
 
 .ourMissBoxRight {
