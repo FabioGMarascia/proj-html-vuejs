@@ -32,13 +32,6 @@ export default {
 				there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
 				the Semantics.
 			</p>
-
-			<div>
-				<button class="btn rounded-5 text-white px-5 py-3 shadow-lg mt-4 fs-6">
-					<div class="background"></div>
-					READ MORE
-				</button>
-			</div>
 		</div>
 
 		<div class="col-8">

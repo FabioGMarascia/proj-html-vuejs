@@ -148,10 +148,7 @@ button {
 	color: white;
 }
 
-p span {
-	color: #00d9a6;
-}
-
+p span,
 i {
 	color: #00d9a6;
 }
