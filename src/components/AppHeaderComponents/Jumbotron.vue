@@ -44,7 +44,7 @@ export default {
 </script>
 
 <template>
-	<div v-for="(slide, i) in slides" :class="checkActive(i)" id="home" class="jumboBox mb-3 slide">
+	<div v-for="(slide, i) in slides" :class="checkActive(i)" class="jumboBox mb-3 slide">
 		<div class="row align-items-center mx-0 overflow-hidden">
 			<div class="col-5 position-relative">
 				<p class="green text-start">17 years of experiance</p>

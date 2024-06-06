@@ -1,10 +1,29 @@
 <script>
 export default {
 	name: "NewProjects",
+	data() {
+		return {
+			urlLogos: [
+				"client-1-2x.png",
+				"client-9-2x.png",
+				"client-7-2x.png",
+				"client-3-2x.png",
+				"client-4-2x.png",
+				"client-5-2x.png",
+			],
+		};
+	},
+	methods: {
+		getImg(path) {
+			let risultato = new URL(`../../assets/photo/` + path, import.meta.url);
+			return risultato.href;
+		},
+	},
 };
 </script>
+
 <template>
-	<section id="NewProject">
+	<section id="newProject">
 		<div class="row justify-content-center gap-4 mx-0">
 			<div class="col-5 border text-center rounded-4 square-left">
 				<p class="mt-5">Are you ready?</p>
@@ -25,9 +44,19 @@ export default {
 					<a href="">
 						<button class="btn rounded-5 border-0 text-white px-5 py-3 shadow-lg mt-4 fs-6">
 							<div class="background"></div>
-							READ MORE
+							STARTS NOW
 						</button>
 					</a>
+				</div>
+			</div>
+
+			<div class="logos row my-5 justify-content-center">
+				<div class="col-10">
+					<div class="row justify-content-center align-items-center">
+						<div v-for="logo in urlLogos" class="col-2 text-center">
+							<img :src="getImg(logo)" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -76,6 +105,12 @@ button {
 	transition: color 0.5s;
 	z-index: 1;
 	overflow: hidden;
+	background: linear-gradient(
+		271deg,
+		rgba(65, 65, 65, 1) 0%,
+		rgba(47, 47, 47, 1) 50%,
+		rgba(18, 20, 19, 1) 100%
+	);
 }
 
 .background {
@@ -101,14 +136,7 @@ button:hover .background {
 	height: 400%;
 }
 
-hr,
-.separator,
-button {
-	background: linear-gradient(
-		271deg,
-		rgba(65, 65, 65, 1) 0%,
-		rgba(47, 47, 47, 1) 50%,
-		rgba(18, 20, 19, 1) 100%
-	);
+.logos {
+	padding: 4rem 0 8rem 0;
 }
 </style>

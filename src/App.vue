@@ -71,7 +71,6 @@ export default {
 	background-image: linear-gradient(#000000, #000000);
 	transition: 0.5s;
 	z-index: -1;
-	border-radius: 50%;
 }
 
 button:hover .background {

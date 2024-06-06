@@ -12,18 +12,27 @@ export default {
 </script>
 
 <template>
-	<header>
+	<header id="home">
 		<div class="number text-white position-fixed top-0 w-100">
 			<div class="headerBox row">
 				<div class="col-6 py-2">
-					<i class="fa-solid fa-phone"></i>
+					<a href="">
+						<i class="fa-solid fa-phone text-white"></i>
+					</a>
+
 					(001) 88451234 88455438
 				</div>
 
 				<div class="col-6 text-end my-auto">
-					<i class="fa-brands fa-facebook-f"></i>
-					<i class="fa-brands fa-twitter mx-4"></i>
-					<i class="fa-brands fa-pinterest-p"></i>
+					<a href="#">
+						<i class="fa-brands fa-facebook-f text-white"></i>
+					</a>
+					<a href="#" class="mx-4">
+						<i class="fa-brands fa-twitter text-white"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-pinterest-p text-white"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -45,6 +54,8 @@ export default {
 							PURCHASE
 						</button>
 					</span>
+
+					<!-- OFFCANVAS -->
 				</div>
 			</div>
 		</nav>
@@ -56,28 +67,6 @@ export default {
 <style scoped>
 .headerBox {
 	margin: 0 10rem;
-}
-
-.search-container {
-	position: relative;
-}
-
-.search-box {
-	position: absolute;
-	top: 50%;
-	left: 100%;
-	transform: translateY(-50%);
-	width: 200px;
-	padding: 5px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	background-color: white;
-	transition: left 0.3s ease;
-	display: none;
-}
-
-.search-box.open {
-	display: block;
-	left: 50%;
 }
 
 button {
@@ -128,4 +117,48 @@ button:hover .background {
 	z-index: 10;
 	background-color: #3c3c3c;
 }
+
+/* .offcanvas-fullscreen {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: hidden;
+}
+
+.offcanvas-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.input-group > .form-control {
+	position: relative;
+	width: 80rem;
+	min-width: 0;
+	border: none;
+	font-size: xx-large;
+}
+
+.search-container {
+	position: relative;
+}
+
+.search-box {
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	width: 200px;
+	padding: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	transition: left 0.3s ease;
+	display: none;
+}
+
+.search-box.open {
+	display: block;
+	left: 50%;
+} */
 </style>

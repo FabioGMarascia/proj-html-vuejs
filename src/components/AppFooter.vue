@@ -98,7 +98,7 @@ a:hover {
 		rgba(71, 71, 71, 1) 100%
 	);
 	color: white;
-	padding: 3rem 10rem;
+	padding: 2.5rem 10rem;
 }
 
 hr,
