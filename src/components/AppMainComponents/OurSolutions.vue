@@ -13,9 +13,9 @@ export default {
 				Stylish!
 			</p>
 
-			<hr class="d-inline-block me-2 rounded bg-success opacity-100" />
+			<hr class="d-inline-block me-2 rounded opacity-100" />
 
-			<hr class="separator d-inline-block rounded bg-success opacity-100" />
+			<hr class="separator d-inline-block rounded opacity-100" />
 
 			<div>
 				<button class="btn rounded-5 text-white px-5 py-3 shadow-lg mt-4 fs-6">
@@ -76,24 +76,10 @@ export default {
 	margin-bottom: 10rem;
 }
 
-hr {
-	width: 0.8rem;
-	padding: 0.2rem 0;
-	border: 0;
-}
-
-.separator {
-	width: 3rem;
-	padding: 0.2rem 0;
-	border: 0;
-}
-
 button {
 	font-size: 0.6rem;
 	display: inline-block;
 	position: relative;
-	background-color: #d5c264;
-	transition: color 0.5s;
 	z-index: 1;
 	overflow: hidden;
 }

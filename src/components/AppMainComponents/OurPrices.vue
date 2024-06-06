@@ -17,8 +17,8 @@ export default {
 </script>
 
 <template>
-	<div class="ourMissBox row mx-0 justify-content-between mt-5">
-		<div class="ourMissBoxRight col-4 pe-4">
+	<div class="ourPricesBox row mx-0 justify-content-between">
+		<div class="ourPricesBoxLeft col-4 pe-4">
 			<div class="col-10 mt-5">
 				<p class="fw-bold py-4 display-4">With <span>Live Chat 24/7</span> Support</p>
 			</div>
@@ -34,7 +34,7 @@ export default {
 			</p>
 		</div>
 
-		<div class="col-8">
+		<div class="ourPricesBoxRight col-8">
 			<div class="row justify-content-center gap-5 text-center">
 				<div class="priceCard col px-0 shadow-lg rounded-4">
 					<div class="py-2 bg-black rounded-top-4"></div>
@@ -106,18 +106,6 @@ p span {
 	color: #00d9a6;
 }
 
-hr {
-	width: 0.8rem;
-	padding: 0.2rem 0;
-	border: 0;
-}
-
-.separator {
-	width: 3rem;
-	padding: 0.2rem 0;
-	border: 0;
-}
-
 hr,
 .separator,
 .my-bg-gradient {
@@ -131,5 +119,9 @@ hr,
 
 li {
 	line-height: 2.5rem;
+}
+
+.ourPricesBox {
+	margin: 25rem 0 20rem 0;
 }
 </style>

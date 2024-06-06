@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-	<div class="ourMissBox row mx-0 justify-content-center">
+	<div id="ourMissions" class="ourMissBox row mx-0 justify-content-center">
 		<div class="ourMissBoxLeft col-5 position-relative">
 			<img
 				src="../../assets/photo/businesswoman-analysing-document-P8WSNMC-1024x820.jpg"
@@ -45,20 +45,12 @@ export default {
 </template>
 
 <style scoped>
+#ourMissions {
+	padding-top: 16rem;
+}
+
 p span {
 	color: #00d9a6;
-}
-
-hr {
-	width: 0.8rem;
-	padding: 0.2rem 0;
-	border: 0;
-}
-
-.separator {
-	width: 3rem;
-	padding: 0.2rem 0;
-	border: 0;
 }
 
 hr,

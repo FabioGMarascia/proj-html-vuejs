@@ -1,9 +1,8 @@
-<!-- qui JS  -->
 <script>
-import store from "../../data/store.js";
 export default {
+	name: "OurResults",
 	data() {
-		store;
+		return {};
 	},
 	methods: {},
 	mounted() {},
@@ -11,7 +10,7 @@ export default {
 </script>
 
 <template>
-	<section class="ourResultsBox my-5 position-relative">
+	<section id="ourResults" class="ourResultsBox my-5 position-relative">
 		<div class="row mx-0 justify-content-center">
 			<span class="myBg col-5 p-0 rounded-4 position-relative">
 				<div
@@ -74,6 +73,10 @@ export default {
 </template>
 
 <style scoped>
+#ourResults {
+	padding-top: 10rem;
+}
+
 .ourResultsBoxLeft {
 	background: linear-gradient(
 		271deg,
@@ -109,18 +112,6 @@ li {
 
 .bigNumber {
 	font-size: 8rem;
-}
-
-hr {
-	width: 0.8rem;
-	padding: 0.2rem 0;
-	border: 0;
-}
-
-.separator {
-	width: 3rem;
-	padding: 0.2rem 0;
-	border: 0;
 }
 
 hr,

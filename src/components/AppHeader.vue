@@ -1,10 +1,131 @@
 <script>
+import Links from "./AppHeaderComponents/Links.vue";
+import Jumbotron from "./AppHeaderComponents/Jumbotron.vue";
+
 export default {
 	name: "AppHeader",
-	components: {},
+	components: {
+		Links,
+		Jumbotron,
+	},
 };
 </script>
 
-<template></template>
+<template>
+	<header>
+		<div class="number text-white position-fixed top-0 w-100">
+			<div class="headerBox row">
+				<div class="col-6 py-2">
+					<i class="fa-solid fa-phone"></i>
+					(001) 88451234 88455438
+				</div>
 
-<style scoped></style>
+				<div class="col-6 text-end my-auto">
+					<i class="fa-brands fa-facebook-f"></i>
+					<i class="fa-brands fa-twitter mx-4"></i>
+					<i class="fa-brands fa-pinterest-p"></i>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg py-4">
+			<div class="headerBox row justify-content-between w-100">
+				<div class="col-3 px-0">
+					<a class="navbar-brand" href="#"
+						><img class="logo" src="../assets/photo/cropped-Group-39-2x.png"
+					/></a>
+				</div>
+
+				<Links />
+
+				<div class="col-3 text-end px-0">
+					<span class="navbar-text">
+						<button class="btn rounded-5 text-white px-5 py-3 shadow-lg fs-6">
+							<div class="background"></div>
+							PURCHASE
+						</button>
+					</span>
+				</div>
+			</div>
+		</nav>
+
+		<Jumbotron />
+	</header>
+</template>
+
+<style scoped>
+.headerBox {
+	margin: 0 10rem;
+}
+
+.search-container {
+	position: relative;
+}
+
+.search-box {
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	width: 200px;
+	padding: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	transition: left 0.3s ease;
+	display: none;
+}
+
+.search-box.open {
+	display: block;
+	left: 50%;
+}
+
+button {
+	background: linear-gradient(
+		271deg,
+		rgba(122, 222, 108, 1) 0%,
+		rgba(88, 221, 125, 1) 60%,
+		rgba(0, 217, 166, 1) 100%
+	);
+}
+
+button {
+	font-size: 0.6rem;
+	display: inline-block;
+	position: relative;
+	background-color: #d5c264;
+	transition: color 0.5s;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.background {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: linear-gradient(#000000, #000000);
+	transition: 0.5s;
+	z-index: -1;
+	border-radius: 50%;
+}
+
+button:hover .background {
+	width: 150%;
+	height: 400%;
+}
+
+.navbar {
+	position: fixed;
+	top: 2.5rem;
+	z-index: 10;
+	width: 100%;
+}
+
+.number {
+	z-index: 10;
+	background-color: #3c3c3c;
+}
+</style>
