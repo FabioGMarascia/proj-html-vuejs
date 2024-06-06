@@ -38,6 +38,36 @@ export default {
 
 <template>
 	<AppHeader />
+
+	<div
+		class="offcanvas offcanvas-end w-100"
+		tabindex="-1"
+		id="offcanvasRight"
+		aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<button
+				type="button"
+				class="btn-close"
+				data-bs-dismiss="offcanvas"
+				aria-label="Close"></button>
+		</div>
+
+		<div class="offcanvas-body">
+			<div class="row justify-content-center align-content-center h-100">
+				<div class="col-6">
+					<form class="d-flex mb-5" role="search">
+						<input
+							class="form-control me-2 fs-3"
+							type="search"
+							placeholder="Search..."
+							aria-label="Search" />
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<AppMain />
 	<AppFooter />
 	<button

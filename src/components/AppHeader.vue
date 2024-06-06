@@ -48,7 +48,7 @@ export default {
 				<Links />
 
 				<div class="col-3 text-end px-0">
-					<span class="navbar-text">
+					<span class="navbar-btn">
 						<button class="btn rounded-5 text-white px-5 py-3 shadow-lg fs-6">
 							<div class="background"></div>
 							PURCHASE
@@ -56,6 +56,14 @@ export default {
 					</span>
 
 					<!-- OFFCANVAS -->
+					<button
+						class="p-0 border-0 btn"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasRight"
+						aria-controls="offcanvasRight">
+						<i class="fas fa-search fs-4 ms-3"></i>
+					</button>
 				</div>
 			</div>
 		</nav>
@@ -69,7 +77,7 @@ export default {
 	margin: 0 10rem;
 }
 
-button {
+.navbar-btn button {
 	background: linear-gradient(
 		271deg,
 		rgba(122, 222, 108, 1) 0%,
@@ -78,11 +86,14 @@ button {
 	);
 }
 
+button i {
+	color: rgba(122, 222, 108, 1);
+}
+
 button {
 	font-size: 0.6rem;
 	display: inline-block;
 	position: relative;
-	background-color: #d5c264;
 	transition: color 0.5s;
 	z-index: 1;
 	overflow: hidden;
