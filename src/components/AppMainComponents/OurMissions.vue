@@ -69,7 +69,6 @@ button {
 	font-size: 0.6rem;
 	display: inline-block;
 	position: relative;
-	background-color: #d5c264;
 	transition: color 0.5s;
 	z-index: 1;
 	overflow: hidden;

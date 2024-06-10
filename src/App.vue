@@ -86,7 +86,6 @@ export default {
 	bottom: 20px;
 	right: 20px;
 	background-color: white;
-	position: relative;
 	z-index: 1;
 	overflow: hidden;
 }
